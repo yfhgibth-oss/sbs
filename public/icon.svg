@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="50%" stop-color="#7c3aed" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#4f46e5" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="128" fill="url(#grad)" />
+  <circle cx="256" cy="256" r="180" fill="white" fill-opacity="0.1" />
+  <!-- Coin & Checkmark / Task symbol -->
+  <g filter="url(#shadow)" fill="none" stroke="white" stroke-width="32" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="256" cy="256" r="140" stroke="white" stroke-width="28" fill="#1e1b4b" fill-opacity="0.4"/>
+    <path d="M180 256 L230 306 L332 204" stroke="#38bdf8" stroke-width="34"/>
+    <circle cx="350" cy="150" r="28" fill="#fbbf24" stroke="#f59e0b" stroke-width="6"/>
+  </g>
+</svg>

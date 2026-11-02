@@ -1,0 +1,310 @@
+export type Language = 'en' | 'bn';
+
+export const translations = {
+  en: {
+    // Brand & General
+    brandName: 'Task & Earn',
+    tagline: 'Verified Micro-Tasks, Missions & Campaigns',
+    dashboard: 'Dashboard',
+    tasks: 'Tasks',
+    calendar: 'Calendar',
+    missions: 'Missions & Challenges',
+    campaigns: 'Campaign Manager',
+    antiFraud: 'Anti-Fraud Dashboard',
+    analytics: 'Analytics',
+    reports: 'Export Reports',
+    promoCodes: 'Promo Codes',
+    support: 'Support Center',
+    systemHealth: 'System Health & Backup',
+    adminSecurity: 'Admin Security',
+    financialRules: 'Financial Rules',
+    profile: 'Profile & Privacy',
+    savedTasks: 'Saved Tasks',
+    recentlyViewed: 'Recently Viewed',
+    recommendations: 'Recommended For You',
+    notifications: 'Notifications',
+
+    // Role switcher & status
+    personaLabel: 'Switch Persona (Demo & Testing):',
+    roleSuperAdmin: 'Super Admin',
+    roleTaskManager: 'Task Manager',
+    rolePaymentManager: 'Payment Manager',
+    roleSupportManager: 'Support Manager',
+    roleAnalyst: 'Read-Only Analyst',
+    roleCampaignManager: 'Campaign Manager',
+    roleUser: 'User (Earner)',
+    
+    // Streaks & Rewards
+    streakTitle: 'Daily Login Streak',
+    streakDay: 'Day',
+    streakClaim: 'Claim Streak Reward',
+    streakClaimed: 'Claimed Today',
+    streakFreeze: 'Streak Freeze Available',
+    streakBest: 'Longest Streak',
+    streakBonus: 'XP Multiplier',
+
+    // User Levels
+    level: 'Level',
+    novice: 'Novice Earner',
+    explorer: 'Explorer',
+    achiever: 'Achiever',
+    specialist: 'Specialist',
+    master: 'Task Master',
+    legend: 'Legendary',
+    xpToNext: 'XP to next level',
+
+    // Tasks
+    allTasks: 'All Available Tasks',
+    filterCategory: 'Category',
+    filterTier: 'Membership Tier',
+    searchPlaceholder: 'Search tasks by keyword or sponsor...',
+    rewardLabel: 'Reward',
+    estTime: 'Est. Time',
+    proofRequired: 'Proof Required',
+    startTask: 'Start Task',
+    submitProof: 'Submit Evidence',
+    saveTask: 'Save Task',
+    unsaveTask: 'Unsave',
+    duplicateWarning: 'System checks will flag duplicate submissions.',
+    taskDisclaimer: 'Earnings are performance-based. Fake engagement is strictly prohibited.',
+
+    // Missions
+    activeMissions: 'Active Challenges',
+    createMission: 'Create Challenge (Admin)',
+    requirements: 'Requirements',
+    participants: 'Participants',
+    budgetUsed: 'Budget Allocated',
+    claimReward: 'Claim Reward',
+    inProgress: 'In Progress',
+    completed: 'Completed',
+
+    // Anti-Fraud
+    antiFraudTitle: 'Advanced Fraud Detection & Audit',
+    riskScore: 'Risk Score',
+    riskLow: 'Low Risk',
+    riskMedium: 'Medium Risk',
+    riskHigh: 'High Risk',
+    riskCritical: 'Critical Flag',
+    flaggedAccounts: 'Flagged Accounts Under Review',
+    privacyNote: 'Privacy Notice: Automated risk indicators do not auto-ban users. Manual admin investigation is required.',
+    markSafe: 'Mark as Safe',
+    requestProof: 'Request Proof',
+    restrictAccount: 'Freeze Payouts',
+
+    // Campaigns
+    createCampaign: 'Create Campaign',
+    campaignTitle: 'Ad / Micro-Task Campaign',
+    campaignBudget: 'Total Budget',
+    spent: 'Spent',
+    cpa: 'Cost Per Action',
+    remainingActions: 'Remaining Actions',
+    manageCampaigns: 'My Campaigns',
+
+    // Analytics & Reports
+    analyticsTitle: 'Advanced Platform Analytics',
+    dateFilter: 'Timeframe',
+    exportCsv: 'Export CSV',
+    exportSpreadsheet: 'Export Spreadsheet',
+    totalRegistrations: 'Total Registrations',
+    wauMau: 'Weekly / Monthly Active Users',
+    approvalRate: 'Task Approval Rate',
+    rewardDistribution: 'Reward Distribution',
+
+    // Support
+    supportCenterTitle: 'Customer Support & Helpdesk',
+    openTicket: 'Open New Ticket',
+    whatsAppDirect: 'Direct WhatsApp Support',
+    ticketCategory: 'Category',
+    ticketPriority: 'Priority',
+    ticketStatus: 'Status',
+    adminReply: 'Admin Reply',
+    userReply: 'User Reply',
+    sendMessage: 'Send Reply',
+
+    // System Health
+    systemHealthTitle: 'System Health & Automated Backup',
+    firebaseStatus: 'Firebase & Cloud Services',
+    firestoreLatency: 'Firestore Query Latency',
+    cloudBackup: 'Cloud Backup Status',
+    triggerBackup: 'Trigger Immediate Backup',
+    recentErrors: 'Recent Backend Errors',
+
+    // Security & Audit
+    adminSecurityTitle: 'Multi-Role Admin Security & Audit Trail',
+    auditLogs: 'Audit Activity Trail',
+    sensitiveConfirm: 'Sensitive Action Confirmation Required',
+    typeConfirm: 'Please type CONFIRM to execute this action',
+
+    // Privacy & Protection
+    privacyTitle: 'Privacy, Protection & Compliance',
+    ageConsent: 'Age Eligibility & Guardian Consent',
+    dataExport: 'Export My Personal Data (JSON)',
+    deleteAccount: 'Request Account Deletion',
+    leaderboardPrivacy: 'Leaderboard Visibility',
+    financialRulesTitle: 'Zero-Ponzi & Financial Compliance',
+
+    // Common Actions
+    save: 'Save',
+    cancel: 'Cancel',
+    confirm: 'Confirm',
+    close: 'Close',
+    actions: 'Actions',
+    status: 'Status',
+    view: 'View',
+    download: 'Download',
+    installApp: 'Install App (PWA)',
+  },
+  bn: {
+    // Brand & General
+    brandName: 'টাস্ক অ্যান্ড আর্ন',
+    tagline: 'ভেরিফাইড মাইক্রো-টাস্ক, মিশন এবং ক্যাম্পেইন প্ল্যাটফর্ম',
+    dashboard: 'ড্যাশবোর্ড',
+    tasks: 'টাস্ক সমূহ',
+    calendar: 'ক্যালেন্ডার',
+    missions: 'মিশন ও চ্যালেঞ্জ',
+    campaigns: 'ক্যাম্পেইন ম্যানেজার',
+    antiFraud: 'অ্যান্টি-ফ্রড ড্যাশবোর্ড',
+    analytics: 'বিশ্লেষণ (Analytics)',
+    reports: 'রিপোর্ট এক্সপোর্ট',
+    promoCodes: 'প্রোমো কোড',
+    support: 'সাপোর্ট সেন্টার',
+    systemHealth: 'সিস্টেম হেলথ ও ব্যাকআপ',
+    adminSecurity: 'অ্যাডমিন সিকিউরিটি',
+    financialRules: 'আর্থিক নীতিমালা',
+    profile: 'প্রোফাইল ও প্রাইভেসি',
+    savedTasks: 'সংরক্ষিত টাস্ক',
+    recentlyViewed: 'সম্প্রতি দেখা টাস্ক',
+    recommendations: 'আপনার জন্য সুপারিশকৃত',
+    notifications: 'বিজ্ঞপ্তি',
+
+    // Role switcher & status
+    personaLabel: 'ব্যবহারকারী পরিবর্তন (টেস্টিং):',
+    roleSuperAdmin: 'সুপার অ্যাডমিন',
+    roleTaskManager: 'টাস্ক ম্যানেজার',
+    rolePaymentManager: 'পেমেন্ট ম্যানেজার',
+    roleSupportManager: 'সাপোর্ট ম্যানেজার',
+    roleAnalyst: 'রিড-অনলি অ্যানালিস্ট',
+    roleCampaignManager: 'ক্যাম্পেইন ম্যানেজার',
+    roleUser: 'সাধারণ ইউজার (উপার্জনকারী)',
+    
+    // Streaks & Rewards
+    streakTitle: 'দৈনিক লগইন স্ট্রিক',
+    streakDay: 'দিন',
+    streakClaim: 'আজকের স্ট্রিক বোনাস নিন',
+    streakClaimed: 'আজ দাবি করা হয়েছে',
+    streakFreeze: 'স্ট্রিক ফ্রিজ সুরক্ষা উপলব্ধ',
+    streakBest: 'সর্বোচ্চ ধারাবাহিক দিন',
+    streakBonus: 'XP মাল্টিপ্লায়ার',
+
+    // User Levels
+    level: 'লেভেল',
+    novice: 'শিক্ষানবিস আর্নার',
+    explorer: 'অনুসন্ধানী',
+    achiever: 'অর্জনকারী',
+    specialist: 'বিশেষজ্ঞ',
+    master: 'টাস্ক মাস্টার',
+    legend: 'কিংবদন্তি',
+    xpToNext: 'পরবর্তী লেভেলে প্রয়োজনীয় XP',
+
+    // Tasks
+    allTasks: 'উপলব্ধ টাস্ক সমূহ',
+    filterCategory: 'ক্যাটাগরি',
+    filterTier: 'মেম্বারশিপ টিয়ার',
+    searchPlaceholder: 'টাস্ক বা স্পন্সর খুঁজুন...',
+    rewardLabel: 'পুরস্কার',
+    estTime: 'আনুমানিক সময়',
+    proofRequired: 'প্রয়োজনীয় প্রমাণ',
+    startTask: 'টাস্ক শুরু করুন',
+    submitProof: 'প্রমাণ সাবমিট করুন',
+    saveTask: 'টাস্ক সেভ করুন',
+    unsaveTask: 'আনসেভ করুন',
+    duplicateWarning: 'ডুপ্লিকেট সাবমিশন সিস্টেমে শনাক্ত করা হবে।',
+    taskDisclaimer: 'উপার্জন কাজের সফলতার উপর নির্ভরশীল। ফেক এনগেজমেন্ট সম্পূর্ণ নিষিদ্ধ।',
+
+    // Missions
+    activeMissions: 'চলমান চ্যালেঞ্জ সমূহ',
+    createMission: 'নতুন চ্যালেঞ্জ তৈরি করুন (অ্যাডমিন)',
+    requirements: 'শর্তাবলী',
+    participants: 'অংশগ্রহণকারী',
+    budgetUsed: 'বরাদ্দকৃত বাজেট',
+    claimReward: 'পুরস্কার সংগ্রহ করুন',
+    inProgress: 'চলমান',
+    completed: 'সম্পন্ন',
+
+    // Anti-Fraud
+    antiFraudTitle: 'উন্নত প্রতারণা প্রতিরোধ ও নিরীক্ষা',
+    riskScore: 'ঝুঁকি স্কোর (Risk)',
+    riskLow: 'কম ঝুঁকি',
+    riskMedium: 'মাঝারি ঝুঁকি',
+    riskHigh: 'উচ্চ ঝুঁকি',
+    riskCritical: 'জরুরি সতর্কতা',
+    flaggedAccounts: 'পর্যালোচনাধীন সন্দেহভাজন অ্যাকাউন্ট',
+    privacyNote: 'গোপনীয়তা সতর্কতা: ঝুঁকি স্কোরের ভিত্তিতে স্বয়ংক্রিয়ভাবে কাউকে নিষিদ্ধ করা হয় না। ম্যানুয়াল পর্যালোচনা বাধ্যতামূলক।',
+    markSafe: 'নিরাপদ চিহ্নিত করুন',
+    requestProof: 'অতিরিক্ত প্রমাণ চান',
+    restrictAccount: 'পেমেন্ট স্থগিত রাখুন',
+
+    // Campaigns
+    createCampaign: 'নতুন ক্যাম্পেইন তৈরি',
+    campaignTitle: 'বিজ্ঞাপন ও মাইক্রো-টাস্ক ক্যাম্পেইন',
+    campaignBudget: 'মোট বাজেট',
+    spent: 'ব্যয়িত',
+    cpa: 'প্রতি কাজে খরচ (CPA)',
+    remainingActions: 'অবশিষ্ট টাস্ক কোটা',
+    manageCampaigns: 'আমার ক্যাম্পেইন সমূহ',
+
+    // Analytics & Reports
+    analyticsTitle: 'প্ল্যাটফর্মের সামগ্রিক বিশ্লেষণ',
+    dateFilter: 'সময়কাল',
+    exportCsv: 'CSV ডাউনলোড',
+    exportSpreadsheet: 'এক্সেল স্প্রেডশিট ডাউনলোড',
+    totalRegistrations: 'মোট নিবন্ধন',
+    wauMau: 'সাপ্তাহিক ও মাসিক সক্রিয় ব্যবহারকারী',
+    approvalRate: 'টাস্ক অনুমোদনের হার',
+    rewardDistribution: 'পুরস্কার বণ্টন চিত্র',
+
+    // Support
+    supportCenterTitle: 'কাস্টমার সাপোর্ট ও হেল্পডেস্ক',
+    openTicket: 'নতুন সাপোর্ট টিকিট খুলুন',
+    whatsAppDirect: 'সরাসরি হোয়াটসঅ্যাপ সাপোর্ট',
+    ticketCategory: 'বিষয়/বিভাগ',
+    ticketPriority: 'অগ্রাধিকার',
+    ticketStatus: 'অবস্থা',
+    adminReply: 'অ্যাডমিনের উত্তর',
+    userReply: 'ব্যবহারকারীর উত্তর',
+    sendMessage: 'উত্তর পাঠান',
+
+    // System Health
+    systemHealthTitle: 'সিস্টেম হেলথ ও স্বয়ংক্রিয় ক্লাউড ব্যাকআপ',
+    firebaseStatus: 'ফায়ারবেস ও ক্লাউড সংযোগ',
+    firestoreLatency: 'ফায়ারস্টোর কোয়েরি লেটেন্সি',
+    cloudBackup: 'ক্লাউড ব্যাকআপের স্থিতি',
+    triggerBackup: 'এখনই ব্যাকআপ শুরু করুন',
+    recentErrors: 'সাম্প্রতিক ব্যাকএন্ড ত্রুটি সমূহ',
+
+    // Security & Audit
+    adminSecurityTitle: 'মাল্টি-রোল অ্যাডমিন নিরাপত্তা ও অডিট লগ',
+    auditLogs: 'প্রশাসনিক কার্যক্রমের অডিট ট্রেইল',
+    sensitiveConfirm: 'সংবেদনশীল কার্যক্রমের নিশ্চিতকরণ আবশ্যক',
+    typeConfirm: 'নিশ্চিত করতে অনুগ্রহ করে CONFIRM টাইপ করুন',
+
+    // Privacy & Protection
+    privacyTitle: 'গোপনীয়তা, নিরাপত্তা ও সুরক্ষা নীতিমালা',
+    ageConsent: 'বয়স যোগ্যতা ও অভিভাবকের সম্মতি',
+    dataExport: 'ব্যক্তিগত তথ্য এক্সপোর্ট করুন (JSON)',
+    deleteAccount: 'অ্যাকাউন্ট মুছে ফেলার আবেদন',
+    leaderboardPrivacy: 'লিডারবোর্ড দৃশ্যমানতা',
+    financialRulesTitle: 'জিরো-পঞ্জি ও শতভাগ স্বচ্ছ আর্থিক নিয়মাবলী',
+
+    // Common Actions
+    save: 'সংরক্ষণ',
+    cancel: 'বাতিল',
+    confirm: 'নিশ্চিত করুন',
+    close: 'বন্ধ করুন',
+    actions: 'পদক্ষেপ',
+    status: 'অবস্থা',
+    view: 'দেখুন',
+    download: 'ডাউনলোড',
+    installApp: 'অ্যাপ ইনস্টল করুন (PWA)',
+  }
+};

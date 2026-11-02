@@ -1,0 +1,7 @@
+{
+  "name": "Task & Earn — Advanced Micro-Task, Mission & Campaign Platform",
+  "description": "Advanced Task & Earn platform featuring daily streaks, missions, anti-fraud detection, advertiser campaign management, rich analytics, report exports, promo codes, multi-role admin security, and multilingual support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
