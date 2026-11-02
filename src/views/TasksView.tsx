@@ -655,18 +655,8 @@ export const TasksView: React.FC = () => {
                     required
                     language={taskLang}
                     helpText={taskLang === 'bn' 
-                      ? 'মোবাইল বা কম্পিউটার থেকে সরাসরি স্ক্রিনশট সিলেক্ট বা ড্রপ করুন। কোনো লিংকের প্রয়োজন নেই।' 
-                      : 'Select or drag & drop a screenshot directly from your phone or PC. No external link needed.'}
-                    demoPresets={[
-                      {
-                        label: taskLang === 'bn' ? 'নমুনা স্ক্রিনশট ১' : 'Demo Screenshot 1',
-                        url: 'https://images.unsplash.com/photo-1556742049-0a67c5574f73?auto=format&fit=crop&w=600&q=80'
-                      },
-                      {
-                        label: taskLang === 'bn' ? 'নমুনা স্ক্রিনশট ২' : 'Demo Screenshot 2',
-                        url: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80'
-                      }
-                    ]}
+                      ? 'মোবাইল বা কম্পিউটার থেকে সরাসরি স্ক্রিনশট সিলেক্ট বা ড্রপ করুন।' 
+                      : 'Select or drag & drop a screenshot directly from your phone or PC.'}
                   />
                 </div>
               )}
@@ -681,16 +671,9 @@ export const TasksView: React.FC = () => {
                     rows={3}
                     value={proofText}
                     onChange={(e) => setProofText(e.target.value)}
-                    placeholder={taskLang === 'bn' ? 'সার্টিফিকেট রেফারেন্স কোড বা কাজের বিবরণ লিখুন...' : 'Enter the reference certificate code, answers, or bug report description...'}
+                    placeholder={taskLang === 'bn' ? 'সার্টিফিকেট রেফারেন্স কোড বা কাজের বিবরণ লিখুন...' : 'Enter the reference certificate code, answers, or description...'}
                     className="w-full rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 p-3 text-xs text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
                   />
-                  <button
-                    type="button"
-                    onClick={() => setProofText('FINLIT-CERT-BD-' + Math.floor(10000 + Math.random() * 90000))}
-                    className="mt-1 text-[11px] text-indigo-600 dark:text-indigo-400 hover:underline block"
-                  >
-                    {taskLang === 'bn' ? 'নমুনা কমপ্লিশন কোড বসান' : 'Insert Valid Completion Code'}
-                  </button>
                 </div>
               )}
 
@@ -707,13 +690,6 @@ export const TasksView: React.FC = () => {
                     placeholder="https://facebook.com/posts/... or https://forms.gle/..."
                     className="w-full rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 px-3.5 py-2 text-xs text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
                   />
-                  <button
-                    type="button"
-                    onClick={() => setProofUrl(`https://social.example.com/share/usr_${Math.floor(1000 + Math.random() * 9000)}`)}
-                    className="mt-1 text-[11px] text-indigo-600 dark:text-indigo-400 hover:underline block"
-                  >
-                    {taskLang === 'bn' ? 'নমুনা পোস্ট লিংক বসান' : 'Insert Sample Post URL'}
-                  </button>
                 </div>
               )}
 

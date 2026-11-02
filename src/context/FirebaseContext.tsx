@@ -26,7 +26,7 @@ import {
 } from 'firebase/firestore';
 import { auth, db, googleProvider } from '../firebase/config';
 import { testConnection } from '../firebase/connectionTest';
-import { seedFirestoreIfEmpty } from '../services/seedFirestore';
+import { seedFirestoreIfEmpty, purgeAllDemoData } from '../services/seedFirestore';
 import { 
   FirestoreUser, 
   FirestoreWallet, 
@@ -113,6 +113,7 @@ interface FirebaseContextType {
   manualWalletAdjustment: (userId: string, amount: number, type: 'credit' | 'debit', reason: string) => Promise<void>;
   uploadImage: (file: File, folder?: string) => Promise<string>;
   reSeedInitialData: () => Promise<void>;
+  purgeDemoData: () => Promise<void>;
   createPromotedApp: (app: Omit<PromotedApp, 'id' | 'downloadsCount' | 'submittedAt'>) => Promise<void>;
   updatePromotedApp: (appId: string, updates: Partial<PromotedApp>) => Promise<void>;
   deletePromotedApp: (appId: string) => Promise<void>;
@@ -902,6 +903,10 @@ export const FirebaseProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     await seedFirestoreIfEmpty();
   };
 
+  const purgeDemoData = async () => {
+    await purgeAllDemoData();
+  };
+
   const uploadImage = async (file: File, folder = 'uploads') => {
     return await uploadImageToStorage(file, folder);
   };
@@ -1024,6 +1029,7 @@ export const FirebaseProvider: React.FC<{ children: React.ReactNode }> = ({ chil
         manualWalletAdjustment,
         uploadImage,
         reSeedInitialData,
+        purgeDemoData,
         createPromotedApp,
         updatePromotedApp,
         deletePromotedApp,

@@ -134,6 +134,7 @@ export const AdminPanelView: React.FC = () => {
     manualWalletAdjustment,
     replySupportTicket,
     reSeedInitialData,
+    purgeDemoData,
     promotedApps,
     updatePromotedApp,
     deletePromotedApp,
@@ -160,7 +161,7 @@ export const AdminPanelView: React.FC = () => {
   const [taskReward, setTaskReward] = useState(30);
   const [taskXp, setTaskXp] = useState(50);
   const [taskUrl, setTaskUrl] = useState('');
-  const [taskImg, setTaskImg] = useState('https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=600&q=80');
+  const [taskImg, setTaskImg] = useState('');
   const [taskProofType, setTaskProofType] = useState<FirestoreTask['proofType']>('screenshot');
   const [taskInstructions, setTaskInstructions] = useState('Complete the activity and submit proof.');
   const [taskInstructionsBn, setTaskInstructionsBn] = useState('কাজের সকল শর্ত পূরণ করে উপযুক্ত প্রমাণ জমা দিন।');
@@ -168,14 +169,14 @@ export const AdminPanelView: React.FC = () => {
   // Ad modal state
   const [newAdOpen, setNewAdOpen] = useState(false);
   const [adTitle, setAdTitle] = useState('');
-  const [adImg, setAdImg] = useState('https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=600&q=80');
-  const [adUrl, setAdUrl] = useState('https://google.com');
+  const [adImg, setAdImg] = useState('');
+  const [adUrl, setAdUrl] = useState('');
   const [adPlacement, setAdPlacement] = useState<FirestoreAdvertisement['placement']>('popup');
 
   // Banner modal state
   const [newBannerOpen, setNewBannerOpen] = useState(false);
   const [bannerTitle, setBannerTitle] = useState('');
-  const [bannerImg, setBannerImg] = useState('https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&w=800&q=80');
+  const [bannerImg, setBannerImg] = useState('');
   const [bannerLink, setBannerLink] = useState('#');
 
   // Notice modal state
@@ -827,6 +828,7 @@ export const AdminPanelView: React.FC = () => {
               setPayoutModalOpen(true);
             }}
             showToast={showToast}
+            purgeDemoData={purgeDemoData}
           />
         )}
 

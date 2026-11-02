@@ -130,6 +130,23 @@ const AppContext = createContext<AppContextType | undefined>(undefined);
 
 export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   // Load state from localStorage or initial seeds
+  // Ensure legacy demo data in localStorage is purged
+  if (typeof window !== 'undefined' && !localStorage.getItem('taskearn_demo_data_purged_flag')) {
+    localStorage.removeItem('taskearn_users');
+    localStorage.removeItem('taskearn_current_user_id');
+    localStorage.removeItem('taskearn_tasks');
+    localStorage.removeItem('taskearn_submissions');
+    localStorage.removeItem('taskearn_missions');
+    localStorage.removeItem('taskearn_campaigns');
+    localStorage.removeItem('taskearn_fraud_flags');
+    localStorage.removeItem('taskearn_promo_codes');
+    localStorage.removeItem('taskearn_tickets');
+    localStorage.removeItem('taskearn_withdrawals');
+    localStorage.removeItem('taskearn_audit_logs');
+    localStorage.removeItem('taskearn_notifications');
+    localStorage.setItem('taskearn_demo_data_purged_flag', 'true');
+  }
+
   const [users, setUsers] = useState<User[]>(() => {
     try {
       const saved = localStorage.getItem('taskearn_users');
@@ -144,7 +161,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
   });
 
   const [currentUserId, setCurrentUserId] = useState<string>(() => {
-    return localStorage.getItem('taskearn_current_user_id') || 'usr_tanvir';
+    return localStorage.getItem('taskearn_current_user_id') || 'usr_admin';
   });
 
   const [tasks, setTasks] = useState<Task[]>(() => {

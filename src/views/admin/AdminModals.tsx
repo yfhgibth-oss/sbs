@@ -219,12 +219,6 @@ export const TaskModal: React.FC<TaskModalProps> = ({
               folder="tasks"
               language="bn"
               helpText="কম্পিউটার বা ফোনের গ্যালারি থেকে যেকোনো ছবি বা স্ক্রিনশট সরাসরি আপলোড করুন।"
-              demoPresets={[
-                { label: 'YouTube Video', url: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=600&q=80' },
-                { label: 'Website Visit', url: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80' },
-                { label: 'Mobile App', url: 'https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=600&q=80' },
-                { label: 'Survey / Form', url: 'https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&w=600&q=80' }
-              ]}
             />
           </div>
 
